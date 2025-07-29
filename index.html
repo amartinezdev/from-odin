@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="left">
+      <img src="./img/leftsidebg-beach.avif" alt="image" id="leftimg" />
+      <div class="leftTitle">
+        <img src="./img/logo.png" alt="logoimg" id="logo" />
+        <p>NEPTUNO</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="formText">
+        <p class="first">
+          This is not a real online service! You know tou need something <br />like this in your life to help you realize your deepest dreams.
+          <br />
+          Sign up <span>now</span> to get started.
+        </p>
+
+        <p class="second">You <span>know</span> you want to.</p>
+        <legend>Let's do this!</legend>
+        <form action="" method="post">
+          <div class="formColumn">
+            <label for="firstname">* FIRST NAME</label>
+            <input type="text" name="firstname" id="firstname" required />
+
+            <label for="email">* EMAIL</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="passwd">* PASSWORD</label>
+            <input type="password" name="passwd" id="passwd" required />
+          </div>
+
+          <div class="formColumn">
+            <label for="lastname">* LAST NAME</label>
+            <input type="text" name="lastname" id="lastname" required />
+
+            <label for="phone">* PHONE NUMBER</label>
+            <input type="number" name="phone" id="phone" required />
+
+            <label for="passwd">* CONFIRM PASSWORD</label>
+            <input type="password" name="passwd" id="passwd2" required />
+          </div>
+        </form>
+        <div class="footer">
+          <button class="boton">Create Account</button>
+          <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

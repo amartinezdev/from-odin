@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse-Bold.otf') format('opentype');
+}
+
+:root{
+    --button-color: #3f92c2;
+    --logo-font: 'Norse', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vh;
+    height: 100vh;
+}
+
+.left{
+    display: flex;
+    position: relative;
+}
+
+.leftTitle > p{
+    font-family: var(--logo-font);
+    font-size: 3.5rem;
+    margin-top: 46px;
+    z-index: 2;
+}
+
+.leftTitle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.leftTitle{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 150px;
+    width: 100%;
+    color: white;
+    justify-content: center;
+}
+
+
+#logo{
+    position: relative;
+}
+
+.formText{
+    position:relative;
+    bottom: 5%;
+}
+
+.right{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+span{
+    font-style: italic;
+}
+
+.first, .second{
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    margin-left: 50px;
+}
+
+
+.first{
+    margin-bottom: 25px;
+}
+
+.second{
+    margin-bottom: 80px;
+}
+
+legend{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.forumTitle{
+    display: flex;
+}
+
+form{
+    display: flex;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.534);
+    width: 100%;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+.formColumn{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+
+}
+
+input {
+  border: 1px solid #ff0000;
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #23fff4;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+input:invalid:focus{
+    border-color: rgb(14, 199, 255);
+    
+}
+
+input:invalid{
+    border-color: red;
+    
+}
+
+input:valid{
+    border:2px solid #596D48;
+}
+
+.footer{
+    margin-left:50px;
+}
+
+.boton{
+    padding: 10px 30px;
+    background-color: #3da5be;
+    border: none;
+    cursor:pointer;
+    border-radius: 10%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-bottom: 25px;
+}
+
+.boton:hover{
+    background-color: #2565db;
+}
